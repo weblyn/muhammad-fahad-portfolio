@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="FinTrack — Smart personal finance dashboard">
+    <meta name="author" content="Fahad">
+
+    <title>FinTrack | Personal Finance</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="brand">
+        <div class="brand-icon">
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+
+        <div>
+            <strong>FinTrack</strong>
+            <span>PERSONAL FINANCE</span>
+        </div>
+    </div>
+
+    <nav class="sidebar-nav">
+
+        <p class="nav-title">MAIN</p>
+
+        <a href="#dashboard" class="side-link active">
+            <i class="fa-solid fa-grid-2"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="#transactions" class="side-link">
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <span>Transactions</span>
+        </a>
+
+        <a href="#budgets" class="side-link">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Budgets</span>
+        </a>
+
+        <a href="#goals" class="side-link">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>Goals</span>
+        </a>
+
+        <p class="nav-title">MANAGE</p>
+
+        <a href="#analytics" class="side-link">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Analytics</span>
+        </a>
+
+        <a href="#settings" class="side-link">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="upgrade-card">
+
+            <i class="fa-solid fa-sparkles"></i>
+
+            <h4>FinTrack Pro</h4>
+
+            <p>
+                Unlock advanced insights and smarter planning.
+            </p>
+
+            <button id="upgradeBtn">
+                Explore Pro
+            </button>
+
+        </div>
+
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Sign Out
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main-content">
+
+    <!-- HEADER -->
+
+    <header class="topbar">
+
+        <div class="mobile-left">
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <span>FinTrack</span>
+
+        </div>
+
+        <div class="page-title">
+
+            <span>OVERVIEW</span>
+
+            <h1>Good morning 👋</h1>
+
+        </div>
+
+        <div class="top-actions">
+
+            <button class="top-icon" id="notificationBtn">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </button>
+
+            <div class="profile">
+
+                <div class="avatar">
+                    FK
+                </div>
+
+                <div class="profile-info">
+                    <strong>Fahad Khan</strong>
+                    <small>Personal Account</small>
+                </div>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section class="dashboard" id="dashboard">
+
+        <div class="dashboard-head">
+
+            <div>
+                <p class="muted">Your financial overview</p>
+                <h2>September 2026</h2>
+            </div>
+
+            <button class="date-btn" id="dateBtn">
+                <i class="fa-regular fa-calendar"></i>
+                This Month
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+        </div>
+
+
+        <!-- SUMMARY CARDS -->
+
+        <div class="summary-grid">
+
+            <article class="summary-card balance">
+
+                <div class="card-top">
+
+                    <span>Total Balance</span>
+
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </div>
+
+                </div>
+
+                <h3 id="balanceAmount">
+                    $24,680.50
+                </h3>
+
+                <p class="trend positive">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    8.4%
+                    <span>vs last month</span>
+                </p>
+
+            </article>
+
+
+            <article class="summary-card">
+
+                <div class="card-top">
+
+                    <span>Total Income</span>
+
+                    <div class="summary-icon income">
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+
+                </div>
+
+                <h3 id="incomeAmount">
+                    $8,450.00
+                </h3>
+
+                <p class="trend positive">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    12.6%
+                    <span>vs last month</span>
+                </p>
+
+            </article>
+
+
+            <article class="summary-card">
+
+                <div class="card-top">
+
+                    <span>Total Expenses</span>
+
+                    <div class="summary-icon expense">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </div>
+
+                </div>
+
+                <h3 id="expenseAmount">
+                    $4,280.75
+                </h3>
+
+                <p class="trend negative">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    4.2%
+                    <span>vs last month</span>
+                </p>
+
+            </article>
+
+
+            <article class="summary-card">
+
+                <div class="card-top">
+
+                    <span>Savings</span>
+
+                    <div class="summary-icon saving">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+
+                </div>
+
+                <h3 id="savingAmount">
+                    $4,169.25
+                </h3>
+
+                <p class="trend positive">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    14.8%
+                    <span>this month</span>
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- ================= CHART + QUICK ACTION ================= -->
+
+        <div class="main-grid">
+
+            <section class="panel chart-panel" id="analytics">
+
+                <div class="panel-head">
+
+                    <div>
+                        <span class="panel-label">CASH FLOW</span>
+                        <h3>Income vs Expenses</h3>
+                    </div>
+
+                    <select id="chartPeriod">
+
+                        <option value="month">
+                            Monthly
+                        </option>
+
+                        <option value="week">
+                            Weekly
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="chart">
+
+                    <div class="chart-y">
+
+                        <span>$10k</span>
+                        <span>$7.5k</span>
+                        <span>$5k</span>
+                        <span>$2.5k</span>
+                        <span>$0</span>
+
+                    </div>
+
+                    <div class="chart-area">
+
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+
+                        <svg
+                            viewBox="0 0 700 250"
+                            preserveAspectRatio="none"
+                            class="chart-svg"
+                        >
+
+                            <defs>
+
+                                <linearGradient
+                                    id="incomeGradient"
+                                    x1="0"
+                                    x2="0"
+                                    y1="0"
+                                    y2="1"
+                                >
+                                    <stop
+                                        offset="0%"
+                                        stop-color="#6d7dfc"
+                                        stop-opacity=".25"
+                                    />
+
+                                    <stop
+                                        offset="100%"
+                                        stop-color="#6d7dfc"
+                                        stop-opacity="0"
+                                    />
+
+                                </linearGradient>
+
+                            </defs>
+
+                            <path
+                                class="income-fill"
+                                d="M0,175 C80,130 120,150 175,105 S260,115 320,85 S400,120 455,70 S530,90 580,45 S650,65 700,25 L700,250 L0,250 Z"
+                            />
+
+                            <path
+                                class="income-line"
+                                d="M0,175 C80,130 120,150 175,105 S260,115 320,85 S400,120 455,70 S530,90 580,45 S650,65 700,25"
+                            />
+
+                            <path
+                                class="expense-line"
+                                d="M0,205 C75,185 120,190 175,165 S260,175 320,145 S405,160 455,125 S535,150 580,110 S650,125 700,95"
+                            />
+
+                        </svg>
+
+                        <div class="chart-x">
+
+                            <span>1</span>
+                            <span>5</span>
+                            <span>10</span>
+                            <span>15</span>
+                            <span>20</span>
+                            <span>25</span>
+                            <span>30</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="chart-legend">
+
+                    <span>
+                        <i class="income-dot"></i>
+                        Income
+                    </span>
+
+                    <span>
+                        <i class="expense-dot"></i>
+                        Expenses
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- QUICK ACTIONS -->
+
+            <section class="panel quick-panel">
+
+                <div class="panel-head">
+
+                    <div>
+                        <span class="panel-label">
+                            QUICK ACTION
+                        </span>
+
+                        <h3>Add Transaction</h3>
+                    </div>
+
+                </div>
+
+                <form id="transactionForm">
+
+                    <div class="type-switch">
+
+                        <button
+                            type="button"
+                            class="type-btn active income-type"
+                            data-type="income"
+                        >
+                            Income
+                        </button>
+
+                        <button
+                            type="button"
+                            class="type-btn"
+                            data-type="expense"
+                        >
+                            Expense
+                        </button>
+
+                    </div>
+
+                    <label>
+                        Amount
+                    </label>
+
+                    <div class="amount-input">
+
+                        <span>$</span>
+
+                        <input
+                            type="number"
+                            id="amountInput"
+                            placeholder="0.00"
+                            min="1"
+                            step="0.01"
+                            required
+                        >
+
+                    </div>
+
+                    <label>
+                        Category
+                    </label>
+
+                    <select id="categoryInput" required>
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option>Salary</option>
+                        <option>Freelance</option>
+                        <option>Food</option>
+                        <option>Shopping</option>
+                        <option>Transport</option>
+                        <option>Entertainment</option>
+                        <option>Bills</option>
+                        <option>Other</option>
+
+                    </select>
+
+                    <label>
+                        Description
+                    </label>
+
+                    <input
+                        type="text"
+                        id="descriptionInput"
+                        placeholder="e.g. Monthly salary"
+                        required
+                    >
+
+                    <button
+                        class="add-btn"
+                        type="submit"
+                    >
+                        <i class="fa-solid fa-plus"></i>
+                        Add Transaction
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+
+        <!-- ================= TRANSACTIONS ================= -->
+
+        <section
+            class="panel transactions-panel"
+            id="transactions"
+        >
+
+            <div class="panel-head">
+
+                <div>
+
+                    <span class="panel-label">
+                        ACTIVITY
+                    </span>
+
+                    <h3>Recent Transactions</h3>
+
+                </div>
+
+                <button
+                    class="view-all"
+                    id="viewAllBtn"
+                >
+                    View all
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="transaction-list" id="transactionList">
+
+                <!-- JS -->
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BUDGETS + GOALS ================= -->
+
+        <div class="bottom-grid">
+
+            <section
+                class="panel budget-panel"
+                id="budgets"
+            >
+
+                <div class="panel-head">
+
+                    <div>
+
+                        <span class="panel-label">
+                            BUDGETING
+                        </span>
+
+                        <h3>Monthly Budgets</h3>
+
+                    </div>
+
+                    <button class="small-add" id="addBudgetBtn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="budget-list">
+
+                    <div class="budget-item">
+
+                        <div class="budget-icon food">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+
+                        <div class="budget-info">
+
+                            <div>
+                                <strong>Food & Dining</strong>
+                                <span>$420 / $600</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width:70%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="budget-item">
+
+                        <div class="budget-icon shopping">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <div class="budget-info">
+
+                            <div>
+                                <strong>Shopping</strong>
+                                <span>$280 / $500</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width:56%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="budget-item">
+
+                        <div class="budget-icon transport">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+
+                        <div class="budget-info">
+
+                            <div>
+                                <strong>Transport</strong>
+                                <span>$180 / $300</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width:60%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="budget-item">
+
+                        <div class="budget-icon bills">
+                            <i class="fa-solid fa-file-invoice"></i>
+                        </div>
+
+                        <div class="budget-info">
+
+                            <div>
+                                <strong>Utilities</strong>
+                                <span>$140 / $200</span>
+                            </div>
+
+                            <div class="progress">
+                                <span style="width:70%"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- GOALS -->
+
+            <section
+                class="panel goals-panel"
+                id="goals"
+            >
+
+                <div class="panel-head">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SAVING GOALS
+                        </span>
+
+                        <h3>Your Goals</h3>
+
+                    </div>
+
+                    <button class="small-add" id="addGoalBtn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="goal">
+
+                    <div class="goal-top">
+
+                        <div class="goal-icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+
+                        <div>
+                            <strong>New Laptop</strong>
+                            <span>$1,200 / $2,000</span>
+                        </div>
+
+                        <b>60%</b>
+
+                    </div>
+
+                    <div class="goal-progress">
+                        <span style="width:60%"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="goal">
+
+                    <div class="goal-top">
+
+                        <div class="goal-icon">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+
+                        <div>
+                            <strong>Travel Fund</strong>
+                            <span>$2,450 / $4,000</span>
+                        </div>
+
+                        <b>61%</b>
+
+                    </div>
+
+                    <div class="goal-progress">
+                        <span style="width:61%"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="goal">
+
+                    <div class="goal-top">
+
+                        <div class="goal-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <div>
+                            <strong>Emergency Fund</strong>
+                            <span>$6,800 / $10,000</span>
+                        </div>
+
+                        <b>68%</b>
+
+                    </div>
+
+                    <div class="goal-progress">
+                        <span style="width:68%"></span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- ================= INSIGHT ================= -->
+
+        <section class="insight-card">
+
+            <div class="insight-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+
+            <div>
+
+                <span>SMART INSIGHT</span>
+
+                <h3>
+                    You're spending 18% less on dining this month.
+                </h3>
+
+                <p>
+                    Great progress! If you maintain this trend,
+                    you could save approximately $215 more this month.
+                </p>
+
+            </div>
+
+            <button id="insightBtn">
+                View insights
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal-overlay" id="modal">
+
+    <div class="modal">
+
+        <button
+            class="modal-close"
+            id="modalClose"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastText">
+        Done
+    </span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>

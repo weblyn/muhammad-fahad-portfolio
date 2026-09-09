@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Muhammad Fahad — Web Developer creating modern, responsive and beautiful digital experiences.">
+    <meta name="author" content="Muhammad Fahad">
+
+    <title>Muhammad Fahad | Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-text"><i class="fa-solid fa-code"></i></span>
+                <strong>Fahad.</strong>
+            </a>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#expertise" class="nav-link">Expertise</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">CV</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <a href="#contact" class="nav-contact">
+                    Support
+                    <i class="fa-solid fa-headset"></i>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="home">
+
+            <div class="hero-shape hero-shape-one"></div>
+            <div class="hero-shape hero-shape-two"></div>
+
+            <div class="container hero-container">
+
+                <!-- HERO CONTENT -->
+                <div class="hero-content">
+
+                    <div class="available">
+                        <span class="available-dot"></span>
+                        Available for opportunities
+                    </div>
+
+                    <p class="hero-small">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        Muhammad <span>Fahad.</span>
+                    </h1>
+
+                    <div class="hero-title">
+                        <span>I build</span>
+                        <strong id="typingText">beautiful websites.</strong>
+                    </div>
+
+                    <p class="hero-description">
+                        I'm a Web Developer focused on creating modern,
+                        responsive and user-friendly digital experiences
+                        that look beautiful and work seamlessly.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            Explore My Work
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Let's Connect
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </a>
+                    </div>
+
+                    <!-- SOCIAL LINKS -->
+                    <div class="hero-socials">
+                        <span>Follow me</span>
+                        <div class="social-line"></div>
+
+                        <a href="https://github.com/weblyn" aria-label="GitHub" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/beingfahad1435" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/beingfahad1435" aria-label="Instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/codewithfahad" aria-label="Facebook" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- ================= HERO VISUAL ================= -->
+                <div class="hero-visual">
+
+                    <!-- FLOATING PROJECT 1 -->
+                    <div class="floating-project project-one">
+                        <img src="data:image/jpeg;base64,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" alt="ShopSphere Preview">
+                        <div>
+                            <strong>ShopSphere</strong>
+                            <small>E-Commerce Web App</small>
+                        </div>
+                    </div>
+
+                    <!-- FLOATING PROJECT 2 -->
+                    <div class="floating-project project-two">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVrDOGw60kej8S_DiPjD2bEqaZufZbs8JPiACfKEMIIg&s=10" alt="La Maison Preview">
+                        <div>
+                            <strong>La Maison</strong>
+                            <small>Restaurant Website</small>
+                        </div>
+                    </div>
+
+                    <!-- CIRCULAR PROFILE IMAGE -->
+                    <div class="hero-main-image">
+                        <img src="portfolio.jpeg" alt="Muhammad Fahad - Web Developer" loading="eager">
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <!-- STATUS BADGE -->
+                    <div class="hero-image-label">
+                        <span class="status-dot"></span>
+                        Web Developer
+                    </div>
+
+                    <!-- FLOATING CODE CARD -->
+                    <div class="floating-code">
+                        <span>&lt;/&gt;</span>
+                        <div>
+                            <strong>Clean Code</strong>
+                            <small>HTML • CSS • JS</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- SCROLL INDICATOR -->
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section class="section about" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-number"></span>
+                    <div>
+                        <p class="section-label">ABOUT ME</p>
+                        <h2>
+                            Turning ideas into
+                            <em>experiences.</em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="about-grid">
+
+                    <!-- ABOUT IMAGE -->
+                    <div class="about-image">
+                        <div class="about-image-box">
+                            <img src="portfolio.jpeg" alt="Muhammad Fahad working on web development" class="about-photo" loading="lazy">
+                            <div class="about-image-overlay">
+                                <div class="about-code">
+                                    <span>&lt;</span>
+                                    <strong>developer</strong>
+                                    <span>/&gt;</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="experience-badge">
+                            <strong>15+</strong>
+                            <span>
+                                Projects<br>Created
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT CONTENT -->
+                    <div class="about-content">
+                        <h3>
+                            A passionate developer who loves
+                            <span>beautiful & functional</span>
+                            websites.
+                        </h3>
+
+                        <p>
+                            I'm currently pursuing a Bachelor's degree
+                            in Information Technology and building my
+                            skills in modern web development.
+                        </p>
+
+                        <p>
+                            I enjoy transforming ideas into clean,
+                            responsive and engaging websites with a
+                            strong focus on user experience and visual design.
+                        </p>
+
+                        <div class="about-details">
+                            <div>
+                                <span>Education</span>
+                                <strong>BS Information Technology</strong>
+                            </div>
+                            <div>
+                                <span>Experience</span>
+                                <strong>3+ Year</strong>
+                            </div>
+                            <div>
+                                <span>Availability</span>
+                                <strong>Open to Work</strong>
+                            </div>
+                            <div>
+                                <span>Specialization</span>
+                                <strong>Web Development,Database systems,Front-end styling & UI component Design
+                                </strong>
+                            </div>
+
+                            <div>
+                                <span>Studying at</span>
+                                <strong>Emerson University Multan</strong>
+                            </div>
+                            <div>
+                                <span>Location</span>
+                                <strong>Multan, Pakistan</strong>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading centered">
+                    <span class="section-number"></span>
+                    <div>
+                        <p class="section-label">MY EXPERTISE</p>
+                        <h2>
+                            Skills that bring ideas
+                            <em>to life.</em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="skills-grid">
+
+                    <!-- HTML -->
+                    <div class="skill-card">
+                        <div class="skill-icon html-icon">
+                            <i class="fa-brands fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Semantic, accessible and well-structured web pages.</p>
+                        <span></span>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card">
+                        <div class="skill-icon css-icon">
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Modern layouts, animations and responsive interfaces.</p>
+                        <span></span>
+                    </div>
+
+                    <!-- JAVASCRIPT -->
+                    <div class="skill-card">
+                        <div class="skill-icon js-icon">
+                            <i class="fa-brands fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Interactive and dynamic web experiences.</p>
+                        <span></span>
+                    </div>
+
+                    <!-- GITHUB -->
+                    <div class="skill-card">
+                        <div class="skill-icon git-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <h3>Git & GitHub</h3>
+                        <p>Version control and professional project workflow.</p>
+                        <span></span>
+                    </div>
+
+                    <!-- RESPONSIVE -->
+                    <div class="skill-card">
+                        <div class="skill-icon responsive-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Beautiful experiences across every screen size.</p>
+                        <span></span>
+                    </div>
+
+                    <!-- UI DESIGN -->
+                    <div class="skill-card">
+                        <div class="skill-icon ui-icon">
+                            <i class="fa-solid fa-pen-ruler"></i>
+                        </div>
+                        <h3>UI Design</h3>
+                        <p>Clean interfaces with strong visual hierarchy.</p>
+                        <span></span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+<section class="section expertise-section" id="expertise">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-number"></span>
+
+            <div>
+                <div class="section-label">MY EXPERTISE</div>
+
+                <h2>
+                    Skills That
+                    <em>Build Experiences.</em>
+                </h2>
+            </div>
+        </div>
+
+        <p class="expertise-intro">
+            My skills help me create modern, responsive and interactive
+            websites. I combine clean code, creative design and smooth
+            user interactions to build professional digital experiences.
+        </p>
+
+        <div class="expertise-grid">
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="fa solid fa-laptop-code"></i>
+                </div>
+
+                <h3>Frontend Development</h3>
+
+                <p>
+                    I use frontend technologies to create clean, semantic and well-organized
+                    website structures. It provides the foundation for
+                    accessible and meaningful web pages.
+                </p>
+
+                <div class="expertise-list">
+                    <span>pixel perfect</span>
+                    <span>responsive design</span>
+                    <span>Structure</span>
+                    <span>Accessibility</span>
+                </div>
+            </div>
+
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="fa solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <h3>Web Motion</h3>
+
+                <p>
+                    I create engaging web experiences with smooth animations, interactive elements and dynamic effects that enhance user engagement.
+                </p>
+
+                <div class="expertise-list">
+                    <span>particle effects</span>
+                    <span>Grid</span>
+                    <span>Animations</span>
+                    <span>Dynamic scripts</span>
+                </div>
+            </div>
+
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="fa solid fa-palette"></i>
+                </div>
+
+                <h3>UI/UX Design</h3>
+
+                <p>
+                    I focus on creating intuitive and engaging user experiences through thoughtful design and usability principles.
+                </p>
+
+                <div class="expertise-list">
+                    <span>User Research</span>
+                    <span>Wireframing</span>
+                    <span>Interactions</span>
+                    <span>Dynamic UI</span>
+                </div>
+            </div>
+
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="fa solid fa-database"></i>
+                </div>
+
+                <h3>SQL & Logic</h3>
+
+                <p>
+                    I use SQL and logical thinking to manage databases, write efficient queries, and implement business logic.
+                </p>
+
+                <div class="expertise-list">
+                    <span>SQL</span>
+                    <span>Logical Reasoning</span>
+                    <span>Database Design</span>
+                    <span>Query Optimization</span>
+                </div>
+            </div>
+
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="fa solid fa-code-branch"></i>
+                </div>
+
+                <h3>Git & Deploy</h3>
+
+                <p>
+                    I use Git for version control and deployment processes to manage and release my projects efficiently.
+                </p>
+
+                <div class="expertise-list">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Deployment</span>
+                    <span>Version Control</span>
+                </div>
+            </div>
+
+
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="fa solid fa-gauge-high"></i>
+                </div>
+
+                <h3>Code Optimization</h3>
+
+                <p>
+                    I focus on writing clean, efficient and maintainable code that enhances performance and scalability.
+                </p>
+
+                <div class="expertise-list">
+                    <span>Code Refactoring</span>
+                    <span>Performance Tuning</span>
+                    <span>Memory Management</span>
+                    <span>Scalability</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="expertise-bottom">
+
+            <h3>
+                <span class="build-icon"><i class="fa-solid fa-layer-group"></i></span> What I Can Build
+            </h3>
+
+            <p>
+                By combining these skills, I can create complete front-end
+                experiences instead of simple web pages.
+            </p>
+
+            <div class="expertise-tags">
+                <span>Portfolio Websites</span>
+                <span>Business Websites</span>
+                <span>Landing Pages</span>
+                <span>Dashboard UI</span>
+                <span>E-Commerce UI</span>
+                <span>Restaurant Websites</span>
+                <span>Student Systems</span>
+                <span>Interactive Websites</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        
+        <!-- ================= PROJECTS ================= -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+
+                <div class="projects-top">
+                    <div class="section-heading">
+                        <span class="section-number"></span>
+                        <div>
+                            <p class="section-label">SELECTED WORK</p>
+                            <h2>
+                                Projects I'm
+                                <em>proud of.</em>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <p class="projects-intro">
+                        A selection of projects built with modern
+                        technologies, thoughtful design and attention
+                        to detail.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 01 -->
+                    <article class="project-card project-large">
+                        <div class="project-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFlaRg15a-PUh_VLkixGpiYPlXWKw6oVylTNZMG0J6A&s=10" alt="ShopSphere E-Commerce Website" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="ShopSphere/index.html" target="_blank" class="project-view" aria-label="Open ShopSphere project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <span class="project-number">01</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-category">E-COMMERCE</span>
+                            <h3>ShopSphere</h3>
+                            <p>
+                                A modern e-commerce experience with
+                                product browsing, categories and
+                                interactive shopping features.
+                            </p>
+
+                            <div class="project-bottom">
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="shopSphere/index.html" target="_blank">
+                                    View Project
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 02 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="La Maison Restaurant Website" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="restaurant/index.html" target="_blank" class="project-view" aria-label="Open La Maison project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <span class="project-number">02</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-category">RESTAURANT</span>
+                            <h3>La Maison</h3>
+                            <p>
+                                A sophisticated restaurant website
+                                designed around food, atmosphere and
+                                elegant user experience.
+                            </p>
+
+                            <div class="project-bottom">
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+
+                                <a href="restaurant/index.html" target="_blank">
+                                    View
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 03 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="FinTrack Finance Dashboard" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="fintrack/index.html" target="_blank" class="project-view" aria-label="Open FinTrack project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <span class="project-number">03</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-category">DASHBOARD</span>
+                            <h3>FinTrack</h3>
+                            <p>
+                                A clean finance dashboard for tracking
+                                income, expenses and financial activity.
+                            </p>
+
+                            <div class="project-bottom">
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+
+                                <a href="fintrack/index.html" target="_blank">
+                                    View
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 04 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80" alt="Insight Blog Website" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="insight/index.html" target="_blank" class="project-view" aria-label="Open Insight Blog project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <span class="project-number">04</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-category">BLOG</span>
+                            <h3>Insight</h3>
+                            <p>
+                                A modern editorial blog interface
+                                focused on readability and engaging content.
+                            </p>
+
+                            <div class="project-bottom">
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JS</span>
+                                </div>
+
+                                <a href="insight/index.html" target="_blank">
+                                    View
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 05 -->
+                    <article class="project-card project-wide">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="StudentHub Student Management System" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="student/index.html" target="_blank" class="project-view" aria-label="Open StudentHub project">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                            <span class="project-number">05</span>
+                        </div>
+
+                        <div class="project-info">
+                            <span class="project-category">MANAGEMENT SYSTEM</span>
+                            <h3>StudentHub</h3>
+                            <p>
+                                A professional student management
+                                dashboard for organizing students,
+                                courses, records and academic information.
+                            </p>
+
+                            <div class="project-bottom">
+                                <div class="tech-stack">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+
+                                <a href="student/index.html" target="_blank">
+                                    View Project
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+       <!-- ================= RESUME ================= -->
+        <section class="section resume-section" id="resume">
+            <div class="container">
+                <div class="resume-box">
+
+                    <div class="resume-content">
+                        <span class="section-label">MY RESUME</span>
+
+                        <h2>
+                            Want to know more<br>
+                            <em>about my journey?</em>
+                        </h2>
+
+                        <p>
+                            Take a look at my CV to learn more about
+                            my education, skills, projects and experience.
+                        </p>
+
+                        <div class="resume-buttons">
+                            <a href="cv.pdf" target="_blank" class="btn btn-primary">
+                                View My CV
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                            <a href="cv.pdf" download class="btn btn-outline">
+                                Download CV
+                                <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- UPDATED CV IMAGE PREVIEW CARD -->
+<div class="resume-card-preview">
+    <div class="cv-image-wrapper">
+        <img src="resume.jpeg" alt="Muhammad Fahad CV Preview" loading="lazy">
+        <div class="cv-overlay">
+            <a href="cv.pdf" target="_blank" class="cv-quick-view">
+                <span>View Full CV</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+        </div>
+    </div>
+</section>
+    </main>
+    <section class="section contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <!-- Contact Heading -->
+            <div class="contact-heading">
+
+                <span class="section-number"></span>
+
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Let's build something
+                    <em>great.</em>
+                </h2>
+
+                <p>
+                    Have a project in mind or want to work together?
+                    Feel free to reach out through any of the platforms below.
+                </p>
+
+            </div>
+
+
+            <!-- Contact Links -->
+            <div class="contact-links">
+
+                <!-- WhatsApp -->
+                <a
+                    href="https://wa.me/923027231332"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+
+                    <div>
+                        <span>WHATSAPP</span>
+                        <strong>Start a conversation</strong>
+                    </div>
+
+                    <i class="fas fa-comments"></i>
+
+                </a>
+
+
+                <!-- Instagram -->
+                <a
+                    href="https://www.instagram.com/beingfahad1435"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+
+                    <div>
+                        <span>INSTAGRAM</span>
+                        <strong>Explore my creative world</strong>
+                    </div>
+
+                    <i class="fas fa-user-plus"></i>
+
+                </a>
+
+
+                <!-- LinkedIn -->
+                <a
+                    href="https://www.linkedin.com/in/beingfahad1435"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+
+                    <div>
+                        <span>LINKEDIN</span>
+                        <strong>Build a professional connection</strong>
+                    </div>
+
+                    <i class="fas fa-handshake"></i>
+
+                </a>
+
+
+                <!-- Facebook -->
+                <a
+                    href="https://www.facebook.com/codewithfahad"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+
+                    <div>
+                        <span>FACEBOOK</span>
+                        <strong>Stay connected with me</strong>
+                    </div>
+
+                    <i class="fas fa-users"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <a href="#home" class="logo">
+                <span class="logo-text"><i class="fa-solid fa-code"></i></span>
+                <strong>Fahad.</strong>
+            </a>
+
+            <p>Designed & built with passion by Muhammad Fahad.</p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/weblyn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/beingfahad1435" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://www.instagram.com/beingfahad1435" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/codewithfahad" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © <span id="currentYear"></span> Muhammad Fahad. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

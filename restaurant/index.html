@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="La Maison — Discover exceptional homes and properties.">
+    <meta name="author" content="Fahad">
+
+    <title>La Maison | Exceptional Living</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+
+<div class="preloader" id="preloader">
+    <div class="preloader-logo">LA <span>MAISON</span></div>
+    <div class="loader"></div>
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header" id="header">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            LA <span>MAISON</span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#properties" class="nav-link">Properties</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="favoriteBtn">
+                <i class="fa-regular fa-heart"></i>
+                <span id="favoriteCount">0</span>
+            </button>
+
+            <a href="#contact" class="nav-cta">
+                List Property
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <span class="eyebrow">
+            FIND YOUR PLACE
+        </span>
+
+        <h1>
+            A Home That
+            <span>Feels Like You.</span>
+        </h1>
+
+        <p>
+            Discover exceptional homes, apartments and private
+            residences selected for people who appreciate beautiful living.
+        </p>
+
+        <!-- SEARCH -->
+
+        <div class="search-card">
+
+            <div class="search-field">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <label>Location</label>
+                    <input
+                        type="text"
+                        id="locationSearch"
+                        placeholder="City or neighborhood"
+                    >
+                </div>
+
+            </div>
+
+            <div class="search-field">
+
+                <i class="fa-solid fa-house"></i>
+
+                <div>
+                    <label>Property Type</label>
+
+                    <select id="typeSearch">
+
+                        <option value="all">All Types</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="House">House</option>
+                        <option value="Penthouse">Penthouse</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="search-field">
+
+                <i class="fa-solid fa-tag"></i>
+
+                <div>
+                    <label>Price</label>
+
+                    <select id="priceSearch">
+
+                        <option value="all">Any Price</option>
+                        <option value="low">Under $500K</option>
+                        <option value="mid">$500K - $1M</option>
+                        <option value="high">Above $1M</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <button class="search-btn" id="searchBtn">
+                Search
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <i class="fa-solid fa-arrow-down"></i>
+    </div>
+
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro section">
+
+    <div class="container intro-grid">
+
+        <div>
+
+            <span class="eyebrow">
+                THE LA MAISON DIFFERENCE
+            </span>
+
+            <h2>
+                More Than A
+                <span>Property.</span>
+            </h2>
+
+        </div>
+
+        <div class="intro-text">
+
+            <p>
+                We believe finding a home should feel inspiring,
+                not overwhelming. La Maison connects you with
+                remarkable spaces and the people who know them best.
+            </p>
+
+            <a href="#about" class="text-link">
+                Discover our story
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROPERTIES ================= -->
+
+<section class="properties section" id="properties">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    CURATED COLLECTION
+                </span>
+
+                <h2>
+                    Featured
+                    <span>Properties.</span>
+                </h2>
+
+            </div>
+
+            <p>
+                Explore a collection of distinctive properties
+                selected for their architecture, location and character.
+            </p>
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="property-controls">
+
+            <div class="property-filters">
+
+                <button class="filter-btn active" data-type="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-type="Villa">
+                    Villas
+                </button>
+
+                <button class="filter-btn" data-type="Apartment">
+                    Apartments
+                </button>
+
+                <button class="filter-btn" data-type="House">
+                    Houses
+                </button>
+
+                <button class="filter-btn" data-type="Penthouse">
+                    Penthouses
+                </button>
+
+            </div>
+
+            <select id="sortProperties">
+
+                <option value="featured">
+                    Sort: Featured
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="property-grid" id="propertyGrid">
+
+            <!-- JavaScript properties -->
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="experience section">
+
+    <div class="container experience-grid">
+
+        <div class="experience-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+                alt="Luxury interior"
+            >
+
+            <div class="experience-badge">
+
+                <strong>15+</strong>
+                <span>Years of<br>Experience</span>
+
+            </div>
+
+        </div>
+
+        <div class="experience-content">
+
+            <span class="eyebrow">
+                OUR PHILOSOPHY
+            </span>
+
+            <h2>
+                Beautiful Spaces.
+                <span>Meaningful Lives.</span>
+            </h2>
+
+            <p>
+                From a quiet apartment in the heart of the city
+                to a private villa overlooking the coast, we help
+                people find spaces that become part of their story.
+            </p>
+
+            <div class="experience-points">
+
+                <div>
+                    <i class="fa-solid fa-compass"></i>
+
+                    <div>
+                        <h3>Local Expertise</h3>
+                        <p>
+                            Deep knowledge of exceptional neighborhoods.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gem"></i>
+
+                    <div>
+                        <h3>Curated Properties</h3>
+                        <p>
+                            Quality over quantity in every collection.
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-handshake"></i>
+
+                    <div>
+                        <h3>Personal Service</h3>
+                        <p>
+                            Guidance tailored to your goals.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="eyebrow">
+                    WHAT WE DO
+                </span>
+
+                <h2>
+                    A Better Way
+                    <span>Home.</span>
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <span>01</span>
+
+                <i class="fa-solid fa-house-circle-check"></i>
+
+                <h3>Buy a Home</h3>
+
+                <p>
+                    Find a property that fits your lifestyle,
+                    aspirations and future.
+                </p>
+
+                <a href="#properties">
+                    Explore homes
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <span>02</span>
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>Sell a Property</h3>
+
+                <p>
+                    Present your property beautifully and
+                    connect with serious buyers.
+                </p>
+
+                <a href="#contact">
+                    Talk to us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <span>03</span>
+
+                <i class="fa-solid fa-key"></i>
+
+                <h3>Private Rentals</h3>
+
+                <p>
+                    Discover refined rental homes for short
+                    and long-term living.
+                </p>
+
+                <a href="#properties">
+                    View rentals
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TESTIMONIAL ================= -->
+
+<section class="testimonial">
+
+    <div class="container testimonial-inner">
+
+        <span class="quote-icon">
+            <i class="fa-solid fa-quote-left"></i>
+        </span>
+
+        <blockquote>
+            “Finding our home felt effortless. La Maison understood
+            what we were looking for before we even knew how to describe it.”
+        </blockquote>
+
+        <div class="testimonial-person">
+
+            <div class="person-avatar">
+                AM
+            </div>
+
+            <div>
+                <strong>Alex Morgan</strong>
+                <span>Homeowner · New York</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-content">
+
+            <span class="eyebrow">
+                ABOUT LA MAISON
+            </span>
+
+            <h2>
+                Homes With
+                <span>Character.</span>
+            </h2>
+
+            <p>
+                La Maison is a modern real-estate concept focused
+                on distinctive homes and thoughtful experiences.
+                We combine technology, design and personal expertise
+                to make property discovery feel effortless.
+            </p>
+
+            <div class="about-stats">
+
+                <div>
+                    <strong>1,200+</strong>
+                    <span>Properties Sold</span>
+                </div>
+
+                <div>
+                    <strong>98%</strong>
+                    <span>Client Satisfaction</span>
+                </div>
+
+                <div>
+                    <strong>24</strong>
+                    <span>Prime Locations</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=85"
+                alt="Modern luxury home"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-content">
+
+            <span class="eyebrow">
+                LET'S TALK
+            </span>
+
+            <h2>
+                Your Next Chapter
+                <span>Starts Here.</span>
+            </h2>
+
+            <p>
+                Tell us what you're looking for and one of our
+                property specialists will get back to you.
+            </p>
+
+            <div class="contact-details">
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>hello@lamaison.com</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+1 555 123 4567</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>25 Madison Avenue, New York</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    placeholder="Your name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email address"
+                    required
+                >
+
+            </div>
+
+            <select required>
+
+                <option value="">
+                    What are you looking for?
+                </option>
+
+                <option>Buy a property</option>
+                <option>Sell a property</option>
+                <option>Rent a property</option>
+
+            </select>
+
+            <textarea
+                rows="5"
+                placeholder="Tell us a little about what you need..."
+                required
+            ></textarea>
+
+            <button type="submit" class="submit-btn">
+                Send Inquiry
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    LA <span>MAISON</span>
+                </a>
+
+                <p>
+                    Exceptional homes for exceptional lives.
+                </p>
+
+                <div class="socials">
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Explore</h3>
+
+                <a href="#properties">Properties</a>
+                <a href="#services">Services</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Locations</h3>
+
+                <a href="#">New York</a>
+                <a href="#">Los Angeles</a>
+                <a href="#">Miami</a>
+                <a href="#">London</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Company</h3>
+
+                <a href="#">Our Story</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>© 2026 La Maison. All rights reserved.</p>
+
+            <p>
+                Crafted for exceptional living.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= PROPERTY MODAL ================= -->
+
+<div class="modal-overlay" id="propertyModal">
+
+    <div class="property-modal">
+
+        <button class="modal-close" id="modalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Done
+    </span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>

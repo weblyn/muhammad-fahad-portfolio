@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Insight — AI-powered data intelligence platform.">
+
+    <title>Insight — Data Intelligence</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="bg-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <span class="logo-mark">
+                <i class="fa-solid fa-sparkles"></i>
+            </span>
+
+            <span>insight<span class="dot">.</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#platform">Platform</a>
+            <a href="#intelligence">Intelligence</a>
+            <a href="#datasets">Datasets</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="login-btn">Sign in</button>
+            <button class="nav-cta" id="demoBtn">
+                Try Insight
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+        </div>
+
+        <button class="mobile-menu" id="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+    <!-- ================= MOBILE NAV ================= -->
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#platform">Platform</a>
+        <a href="#intelligence">Intelligence</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#about">About</a>
+        <button id="mobileDemo">Try Insight</button>
+    </div>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="platform">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="live-dot"></span>
+                    AI DATA INTELLIGENCE
+                </div>
+
+                <h1>
+                    Turn data into
+                    <span class="gradient-text">intelligence.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Insight transforms complex data into clear predictions,
+                    meaningful patterns and decisions you can act on.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn" id="exploreBtn">
+                        Explore Intelligence
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <button class="secondary-btn" id="watchBtn">
+                        <span class="play">
+                            <i class="fa-solid fa-play"></i>
+                        </span>
+                        See how it works
+                    </button>
+
+                </div>
+
+                <div class="hero-trust">
+                    <div class="avatars">
+                        <span>AK</span>
+                        <span>SM</span>
+                        <span>JD</span>
+                        <span>+</span>
+                    </div>
+
+                    <p>
+                        Trusted by <strong>2,400+</strong> data teams
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- AI VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="visual-card">
+
+                    <div class="visual-top">
+                        <div>
+                            <span>LIVE MODEL</span>
+                            <strong>Neural Forecast</strong>
+                        </div>
+
+                        <span class="status">
+                            <i></i> Active
+                        </span>
+                    </div>
+
+                    <div class="neural-space">
+
+                        <div class="orbit orbit-one"></div>
+                        <div class="orbit orbit-two"></div>
+                        <div class="orbit orbit-three"></div>
+
+                        <div class="node node-a"></div>
+                        <div class="node node-b"></div>
+                        <div class="node node-c"></div>
+                        <div class="node node-d"></div>
+                        <div class="node node-e"></div>
+                        <div class="node node-f"></div>
+
+                        <div class="core">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>AI</span>
+                        </div>
+
+                        <svg class="connections"
+                            viewBox="0 0 500 350"
+                            preserveAspectRatio="none">
+
+                            <line x1="250" y1="175" x2="90" y2="70"/>
+                            <line x1="250" y1="175" x2="410" y2="80"/>
+                            <line x1="250" y1="175" x2="80" y2="270"/>
+                            <line x1="250" y1="175" x2="420" y2="270"/>
+                            <line x1="250" y1="175" x2="250" y2="30"/>
+                            <line x1="250" y1="175" x2="250" y2="320"/>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="visual-bottom">
+
+                        <div>
+                            <span>Prediction accuracy</span>
+                            <strong>94.8%</strong>
+                        </div>
+
+                        <div class="accuracy">
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="floating-card prediction">
+
+                    <div class="mini-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div>
+                        <span>AI Prediction</span>
+                        <strong>+18.6% growth</strong>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-trend-up trend"></i>
+
+                </div>
+
+                <div class="floating-card signal">
+
+                    <div class="signal-icon">
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
+
+                    <div>
+                        <span>Signal detected</span>
+                        <strong>High confidence</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= METRICS ================= -->
+
+        <section class="metrics">
+
+            <div class="metric">
+                <span>Data processed</span>
+                <strong>8.4<span>B</span></strong>
+            </div>
+
+            <div class="metric">
+                <span>Model accuracy</span>
+                <strong>94.8<span>%</span></strong>
+            </div>
+
+            <div class="metric">
+                <span>Insights generated</span>
+                <strong>1.2<span>M</span></strong>
+            </div>
+
+            <div class="metric">
+                <span>Avg. response</span>
+                <strong>0.42<span>s</span></strong>
+            </div>
+
+        </section>
+
+        <!-- ================= INTELLIGENCE ================= -->
+
+        <section class="intelligence section" id="intelligence">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">INTELLIGENCE ENGINE</span>
+
+                    <h2>
+                        From raw numbers to
+                        <span class="gradient-text">clear signals.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    A powerful intelligence layer that helps you understand
+                    what happened, why it happened and what comes next.
+                </p>
+
+            </div>
+
+            <div class="intelligence-grid">
+
+                <div class="feature-card large">
+
+                    <div class="feature-number">01</div>
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3>Predictive Analytics</h3>
+
+                    <p>
+                        Discover future trends before they become obvious.
+                        Insight uses intelligent models to identify patterns
+                        hidden inside your data.
+                    </p>
+
+                    <div class="mini-chart">
+
+                        <div class="chart-line-bg"></div>
+
+                        <svg viewBox="0 0 500 150"
+                            preserveAspectRatio="none">
+
+                            <path
+                                d="M0 125 C60 110 80 120 125 95 C170 70 190 100 230 80 C275 58 300 65 340 42 C380 20 410 45 500 8">
+                            </path>
+
+                        </svg>
+
+                    </div>
+
+                    <div class="feature-stat">
+                        <span>Forecast confidence</span>
+                        <strong>94.8%</strong>
+                    </div>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-number">02</div>
+
+                    <div class="feature-icon purple-icon">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+
+                    <h3>Pattern Detection</h3>
+
+                    <p>
+                        Automatically identify anomalies, relationships
+                        and unusual behavior across your datasets.
+                    </p>
+
+                    <div class="pattern">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <div class="feature-number">03</div>
+
+                    <div class="feature-icon orange-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <h3>Smart Recommendations</h3>
+
+                    <p>
+                        Turn insights into practical recommendations
+                        designed around your goals and data.
+                    </p>
+
+                    <div class="recommendation">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Increase campaign reach</span>
+                        <b>+24%</b>
+                    </div>
+
+                    <div class="recommendation">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Optimize conversion</span>
+                        <b>+11%</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ANALYSIS ================= -->
+
+        <section class="analysis section">
+
+            <div class="analysis-card">
+
+                <div class="analysis-info">
+
+                    <span class="section-label">REAL-TIME ANALYSIS</span>
+
+                    <h2>
+                        See the story
+                        <span class="gradient-text">behind your data.</span>
+                    </h2>
+
+                    <p>
+                        Insight doesn't just display numbers. It connects
+                        them, understands relationships and surfaces the
+                        signals that matter most.
+                    </p>
+
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Automated anomaly detection
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            AI-generated explanations
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Real-time forecasting
+                        </li>
+                    </ul>
+
+                    <button class="outline-btn" id="analysisBtn">
+                        Explore analysis
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+                <div class="analysis-visual">
+
+                    <div class="analysis-header">
+                        <span>Performance Signal</span>
+                        <span class="green-text">
+                            <i class="fa-solid fa-circle"></i>
+                            Live
+                        </span>
+                    </div>
+
+                    <div class="signal-chart">
+
+                        <div class="signal-bars">
+                            <span style="height:35%"></span>
+                            <span style="height:48%"></span>
+                            <span style="height:42%"></span>
+                            <span style="height:63%"></span>
+                            <span style="height:55%"></span>
+                            <span style="height:78%"></span>
+                            <span style="height:67%"></span>
+                            <span style="height:86%"></span>
+                            <span style="height:73%"></span>
+                            <span style="height:94%"></span>
+                            <span style="height:81%"></span>
+                            <span style="height:98%"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="signal-tooltip">
+                        <span>Growth signal</span>
+                        <strong>+32.4%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= DATASETS ================= -->
+
+        <section class="datasets section" id="datasets">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">YOUR DATA UNIVERSE</span>
+
+                    <h2>
+                        Everything connected.
+                    </h2>
+                </div>
+
+                <button class="outline-btn small" id="datasetBtn">
+                    View datasets
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+            <div class="dataset-grid">
+
+                <div class="dataset-card">
+
+                    <div class="dataset-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div>
+                        <h3>Customer Data</h3>
+                        <p>2.8M records</p>
+                    </div>
+
+                    <span class="dataset-status">Synced</span>
+
+                    <div class="dataset-progress">
+                        <span style="width:82%"></span>
+                    </div>
+
+                    <div class="dataset-footer">
+                        <span>82% analyzed</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </div>
+
+                <div class="dataset-card">
+
+                    <div class="dataset-icon blue">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+
+                    <div>
+                        <h3>Transactions</h3>
+                        <p>5.2M records</p>
+                    </div>
+
+                    <span class="dataset-status">Synced</span>
+
+                    <div class="dataset-progress">
+                        <span style="width:67%"></span>
+                    </div>
+
+                    <div class="dataset-footer">
+                        <span>67% analyzed</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </div>
+
+                <div class="dataset-card">
+
+                    <div class="dataset-icon orange">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+
+                    <div>
+                        <h3>Marketing</h3>
+                        <p>842K records</p>
+                    </div>
+
+                    <span class="dataset-status">Synced</span>
+
+                    <div class="dataset-progress">
+                        <span style="width:91%"></span>
+                    </div>
+
+                    <div class="dataset-footer">
+                        <span>91% analyzed</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta" id="about">
+
+            <div class="cta-glow"></div>
+
+            <span class="section-label">THE FUTURE IS DATA-DRIVEN</span>
+
+            <h2>
+                Your data already knows
+                <span>the answer.</span>
+            </h2>
+
+            <p>
+                Give it the tools to reveal it.
+            </p>
+
+            <button class="primary-btn" id="ctaBtn">
+                Start exploring
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span class="logo-mark">
+                <i class="fa-solid fa-sparkles"></i>
+            </span>
+            insight<span class="dot">.</span>
+        </div>
+
+        <p>Intelligence for people who think in data.</p>
+
+        <span>© 2026 Insight. All rights reserved.</span>
+
+    </footer>
+
+    <!-- ================= MODAL ================= -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-box">
+
+            <button class="close-modal" id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="modal-symbol">
+                <i class="fa-solid fa-sparkles"></i>
+            </div>
+
+            <h2 id="modalTitle">Insight AI</h2>
+
+            <p id="modalText">
+                Welcome to the intelligence layer.
+            </p>
+
+            <button class="primary-btn" id="modalOk">
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+</body>
+</html>
